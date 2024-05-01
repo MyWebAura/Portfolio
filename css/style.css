@@ -10,10 +10,33 @@ body {
   background-color: black;
 }
 :root {
-  bluegreen: #129fa5;
-  skobeloff: #0d7377;
-  deepjunglegreen: #084749;
-  platinum: #e6e6e6;
-  darkturquoise: #17ccd3;
-  white: #ffff;
+  --bluegreen: #129fa5;
+  --skobeloff: #0d7377;
+  --deepjunglegreen: #084749;
+  --platinum: #e6e6e6;
+  --darkturquoise: #17ccd3;
+  --white: #ffff;
+}
+.intro-name,
+.auto-type{
+  color: var(--darkturquoise);
+}
+.intro-desc{
+  color: var(--platinum);
+}
+.social-links{
+  background-color: transparent;
+  border: 1px solid var(--bluegreen);
+  transition: all 0.45s ease-in-out;
+}
+.social-links:hover{
+  background-color: var(--bluegreen);
+  box-shadow: -3px 39px 31px -22px var(--bluegreen);
+}
+.social-links i{
+  color: var(--darkturquoise);
+  transition: all 0.45s ease-in-out;
+}
+.social-links:hover i{
+  color: var(--platinum);
 }
