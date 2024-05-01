@@ -1,11 +1,19 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-body{
-    background-color: black;
+body {
+  background-color: black;
+}
+:root {
+  bluegreen: #129fa5;
+  skobeloff: #0d7377;
+  deepjunglegreen: #084749;
+  platinum: #e6e6e6;
+  darkturquoise: #17ccd3;
+  white: #ffff;
 }
