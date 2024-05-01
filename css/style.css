@@ -31,7 +31,7 @@ body {
 }
 .social-links:hover{
   background-color: var(--bluegreen);
-  box-shadow:  -1px 5px 26px -2px #12a0a5c9;
+  box-shadow:  -1px 7px 26px -2px #12a0a5c9;
   border: 1px solid var(--white);
 }
 .social-links i{
