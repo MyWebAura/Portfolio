@@ -31,7 +31,8 @@ body {
 }
 .social-links:hover{
   background-color: var(--bluegreen);
-  box-shadow: -3px 39px 31px -22px var(--bluegreen);
+  box-shadow:  -1px 5px 26px -2px #12a0a5c9;
+  border: 1px solid var(--white);
 }
 .social-links i{
   color: var(--darkturquoise);
@@ -39,4 +40,15 @@ body {
 }
 .social-links:hover i{
   color: var(--platinum);
+}
+.hire-me-btn{
+  background: linear-gradient(120deg, #129fa5 , #17ccd3 , #e6e6e6 );
+  border: none;
+  color: var(--platinum);
+  box-shadow: 24px 21px 43px -13px #12a0a5c3 inset;
+  transition: all 0.45s ease-in-out;
+}
+.hire-me-btn:hover{
+  box-shadow: 24px -21px 43px -13px  #17ccd3 inset ,  -1px 22px 33px -11px #129fa5;
+ 
 }
