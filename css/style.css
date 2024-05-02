@@ -9,6 +9,10 @@ a {
 body {
   background-color: black;
 }
+section{
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
 :root {
   --bluegreen: #129fa5;
   --skobeloff: #0d7377;
@@ -18,38 +22,42 @@ body {
   --white: #ffff;
 }
 .intro-name,
-.auto-type{
+.auto-type, 
+.auto-type2 {
   color: var(--darkturquoise);
 }
-.intro-desc{
+.intro-desc {
   color: var(--platinum);
 }
-.social-links{
+.social-links {
   background-color: transparent;
   border: 1px solid var(--bluegreen);
   transition: all 0.45s ease-in-out;
 }
-.social-links:hover{
+.social-links:hover {
   background-color: var(--bluegreen);
-  box-shadow:  -1px 7px 26px -2px #12a0a5c9;
+  box-shadow: -1px 7px 26px -2px #12a0a5c9;
   border: 1px solid var(--white);
 }
-.social-links i{
+.social-links i {
   color: var(--darkturquoise);
   transition: all 0.45s ease-in-out;
 }
-.social-links:hover i{
+.social-links:hover i {
   color: var(--platinum);
 }
-.hire-me-btn{
-  background: linear-gradient(120deg, #129fa5 , #17ccd3 , #e6e6e6 );
+.hire-me-btn, 
+.contact-me-btn {
+  background: linear-gradient(120deg, #129fa5, #17ccd3, #e6e6e6);
   border: none;
   color: var(--platinum);
   box-shadow: 24px 21px 43px -13px #12a0a5c3 inset;
   transition: all 0.45s ease-in-out;
+  cursor: pointer;
 }
-.hire-me-btn:hover{
-  box-shadow: 24px -21px 43px -13px  #17ccd3 inset ,  -1px 22px 33px -11px #129fa5;
+.hire-me-btn:hover, 
+.contact-me-btn:hover {
+  box-shadow: 24px -21px 43px -13px #17ccd3 inset, -1px 22px 33px -11px #129fa5;
 }
 /* .main-img{
   animation: mainImgAnimate 2.45s linear infinite;
@@ -66,13 +74,29 @@ body {
     transform: translateY(0);
   }
 } */
-.about-card{
+.about-card {
   border: 2.5px solid var(--bluegreen);
+  transition: all ease-in-out 0.45s;
 }
-.about-card .card-title{
+.about-card .card-title {
   color: var(--white);
 }
-.about-card .card-title .me-txt{
-  color: var(--bluegreen);
-  filter: drop-shadow();
+.about-card .card-title .me-txt {
+  color: var(--darkturquoise);
+}
+.about-card .about-img{
+  transition: all ease-in-out 0.45s;
+  transform: scale(1.1);
+}
+.about-card:hover{
+  box-shadow: 1px -1px 7px 1px #17ccd3;
+}
+.about-card:hover .about-img {
+  transform: scale(1.2);
+}
+.about-col{
+  height: 24em;
+}
+.about-card .card-text{
+  color: var(--platinum);
 }
