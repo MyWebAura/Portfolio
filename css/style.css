@@ -118,3 +118,7 @@ section{
 .about-card .card-text{
   color: var(--platinum);
 }
+.marquee-txt{
+  color: var(--darkturquoise);
+  font-size: 2em;
+}
