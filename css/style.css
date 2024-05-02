@@ -50,5 +50,29 @@ body {
 }
 .hire-me-btn:hover{
   box-shadow: 24px -21px 43px -13px  #17ccd3 inset ,  -1px 22px 33px -11px #129fa5;
- 
+}
+/* .main-img{
+  animation: mainImgAnimate 2.45s linear infinite;
+
+}
+@keyframes mainImgAnimate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} */
+.about-card{
+  border: 2.5px solid var(--bluegreen);
+}
+.about-card .card-title{
+  color: var(--white);
+}
+.about-card .card-title .me-txt{
+  color: var(--bluegreen);
+  filter: drop-shadow();
 }
