@@ -169,7 +169,7 @@
         </div>
     </section>
    <section id="projects">
-    <div class="container-lg">
+    <div class="container-lg projects-main-container">
         <h1 class="display-2 lato-bold-italic project-heading text-center mb-5 ">Projects</h1>
         <div class="card mb-3 bg-transparent project-card">
             <div class="row g-0">
@@ -181,14 +181,18 @@
                         <h2 class="card-title fs-1  lato-bold-italic ">AI<span class="me-txt">Next</span></h2>
                         <span class="auto-type2 fw-bold fs-4 lato-light"></span>
                         <p class="card-text mt-2 telex-regular ">AiNext: Revolutionizing AI tech with neural networks, machine learning, AI art, chatbots, and gaming. Empowering agencies to push boundaries, shaping the future of digital innovation. </p>
-                        <button class="view-btn mt-4 rounded-4 bg-transparent border-0 me-3 "><p>Desktop view <i class="bi bi-laptop"></i></p></button>
-                        <button class="view-btn mt-4 rounded-4 bg-transparent border-0 ms-3 "><p> Mobile view <i class="bi bi-phone"></i></p></button>
+                        <button class="view-btn mt-4 rounded-4 bg-transparent border-0 me-3 " onclick="openVideo('3d-Videos/Screen Recording 2024-05-03 at 3.13.48 PM.mov');"><p>Desktop view <i class="bi bi-laptop"></i></p></button>
+                        <button id="mobile-view-btn" class="view-btn  mt-4 rounded-4 bg-transparent border-0 ms-3 " onclick="openVideo('3d-Videos/mockrocket-export (2).mp4');"><p> Mobile view <i class="bi bi-phone"></i></p></button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-lg">
+        <div class="container-lg video-player d-none  " id="videoPlayer">
             <video src="3d-Videos/mockrocket-export (2).mp4" controls class="img-fluid project-video"></video>
+            <button class="close-btn bg-transparent  border-0 " onclick="closeVideo();">
+                <i class="bi bi-x-circle"></i>
+            </button>
+            <!-- <video src="3d-Videos/Screen Recording 2024-05-03 at 3.13.48 PM.mov"></video> -->
         </div>
     </div>
    </section>
@@ -205,5 +209,6 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </body>
 <script src="scripts/autoType.js"></script>
+<script src="scripts/script.js"></script>
 
 </html>
