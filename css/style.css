@@ -122,3 +122,29 @@ section{
   color: var(--darkturquoise);
   font-size: 2em;
 }
+.project-card .card-title{
+  color: var(--darkturquoise);
+}
+.project-card .card-text{
+  color: var(--platinum);
+}
+.project-video-mockup{
+  transform: scale(1.2);
+}
+.project-heading{
+  color: var(--platinum);
+}
+.view-btn p{
+  color: var(--darkturquoise);
+  display: inline;
+  background-image: linear-gradient(to right,  #17ccd3 0%, #17ccd3 100%);
+  background-size: 0px 2px;
+  background-position: 0px 95%;
+  transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  padding: 0.20% 0px;
+  background-repeat: no-repeat;
+  border: none;
+}
+.view-btn:hover p{
+  background-size: 100% 2px;
+}
