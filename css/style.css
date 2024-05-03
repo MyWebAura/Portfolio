@@ -148,14 +148,14 @@ section{
 .view-btn:hover p{
   background-size: 100% 2px;
 }
-.projects-main-container{
+.project-video-container{
   position: relative;
 }
 .video-player{
   width: 90%;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 60%;
   transform: translate(-50% , -50%);
 }
 .close-btn{
