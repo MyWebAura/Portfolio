@@ -38,6 +38,19 @@ section {
   --darkturquoise: #17ccd3;
   --white: #ffff;
 }
+.nav-btn {
+  border: 1px solid ;
+  background-color: transparent;
+  color: var(--platinum);
+}
+.nav-btn:hover {
+  animation: borderAnimation 2s infinite linear both;
+  color: var(--platinum);
+}
+.navbar-bg , 
+.offcanvas-bg{
+  backdrop-filter: blur(8px);
+}
 .intro-name,
 .auto-type,
 .auto-type2 {
@@ -254,7 +267,7 @@ section {
     border-bottom-color: var(--skobeloff);
     border-left-color: var(--darkturquoise);
     border-right-color: var(--skobeloff);
-    box-shadow:  1px -1px 7px 1px #17ccd3;
+    box-shadow:  1px -1px 3px -0.1px #17ccd3;
 
   }
   25% {
@@ -262,28 +275,28 @@ section {
     border-top-color: var(--darkturquoise);
     border-right-color: var(--darkturquoise);
     border-left-color: var(--skobeloff);
-    box-shadow: 1px -1px 7px 1px #17ccd3;
+    box-shadow: 1px -1px 3px -0.1px #17ccd3;
   }
   50% {
     border-top-color: var(--skobeloff);
     border-bottom-color: var(--darkturquoise);
     border-left-color: var(--skobeloff);
     border-right-color: var(--darkturquoise);
-    box-shadow: 1px -1px 7px 1px #17ccd3;
+    box-shadow: 1px -1px 3px -0.1px #17ccd3;
   }
   75% {
     border-top-color: var(--skobeloff);
     border-bottom-color: var(--darkturquoise);
     border-left-color: var(--darkturquoise);
     border-right-color: var(--skobeloff);
-    box-shadow: 1px -1px 7px 1px #17ccd3;
+    box-shadow: 1px -1px 3px -0.1px #17ccd3;
   }
   100% {
     border-top-color: var(--darkturquoise);
     border-bottom-color: var(--skobeloff);
     border-left-color: var(--darkturquoise);
     border-right-color: var(--skobeloff);
-    box-shadow: 1px -1px 7px 1px #17ccd3;
+    box-shadow: 1px -1px 3px -0.1px #17ccd3;
   }
 }
 

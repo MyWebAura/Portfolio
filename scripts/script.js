@@ -8,6 +8,17 @@ function closeVideo(){
 }
 function openVideo(file){
     projectVideo.src= file;
-    videoPlayer.classList.remove("d-none");
-    
+    videoPlayer.classList.remove("d-none");   
 }
+document.addEventListener("scroll", () => {
+    const navBar = document.querySelector(".navbar");
+    const offNavBar = document.querySelector(".off-navbar");
+    if (window.scrollY > 0) {
+      navBar.classList.add("navbar-bg");
+      offNavBar.classList.add("offcanvas-bg");
+      offNavBar.classList.add("offcanvas-bg");
+    } else {
+      navBar.classList.remove("navbar-bg");
+      offNavBar.classList.remove("offcanvas-bg");
+    }
+  });

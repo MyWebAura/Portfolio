@@ -3,6 +3,9 @@
         padding-top: 20px;
         padding-top: 20px;
     }
+    .off-navbar .offcanvas{
+        width: 80%;
+    }
     .testimonial-area .card {
         width: 100%;
     }
