@@ -9,4 +9,5 @@ function closeVideo(){
 function openVideo(file){
     projectVideo.src= file;
     videoPlayer.classList.remove("d-none");
+    
 }
