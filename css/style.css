@@ -131,8 +131,23 @@ section{
 .project-video-mockup{
   transform: scale(1.2);
 }
-.project-heading{
-  color: var(--platinum);
+.project-heading,
+.about-heading{
+  color: transparent;
+  font-weight: 900 !important;
+  -webkit-text-stroke: 2px var(--platinum);
+  animation: textFill 4s  infinite ease-in-out both;
+}
+@keyframes textFill {
+  0%{
+    color: transparent;
+  }
+  50%{
+    color: var(--platinum);
+  }
+  100%{
+    color: transparent;
+  }
 }
 .view-btn p{
   color: var(--darkturquoise);
