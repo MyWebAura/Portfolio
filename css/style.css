@@ -163,6 +163,76 @@ section {
   right: 2%;
   font-size: 30px;
 }
+
+.testimonial-area {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-area .card {
+  width: 50%;
+  margin-inline: auto;
+  text-align: center;
+  background: transparent !important;
+  color: var(--white) !important;
+}
+.testimonial-area .rating-starts{
+  color: var(--darkturquoise);
+}
+
+.testimonial-area .stars {
+  position: absolute;
+  content: "";
+  background-color: var(--platinum);
+  width: 1px;
+  height: 8px;
+  animation: stars linear infinite;
+}
+.testimonial-area .stars5 {
+  top: -10px;
+  left: 20%;
+  animation-duration: 2s;
+}
+.testimonial-area .stars2 {
+  top: -20px;
+  left: 40%;
+  animation-duration: 3.3s;
+}
+.testimonial-area .stars3 {
+  top: -30px;
+  left: 60%;
+  animation-duration: 4s;
+}
+.testimonial-area .stars4 {
+  top: -40px;
+  left: 80%;
+  animation-duration: 5s;
+}
+.testimonial-area .stars1 {
+  top: -50px;
+  left: 90%;
+  animation-duration: 5.5s;
+}
+.user-image{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+.carousel-navigation {
+  position: absolute;
+  bottom: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-navigation button {
+  color: var(--platinum);
+  font-size: 1.4rem;
+  transition: color 0.45s ease-in-out;
+}
+.carousel-navigation button:hover {
+  color: var(--darkturquoise);
+}
 /* ------------- ANIMATIONS --------------- */
 
 @keyframes textFill {
@@ -213,5 +283,16 @@ section {
     border-left-color: var(--darkturquoise);
     border-right-color: var(--skobeloff);
     box-shadow: 1px -1px 7px 1px #17ccd3;
+  }
+}
+
+@keyframes stars {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
   }
 }
