@@ -125,7 +125,8 @@ section {
   box-shadow: 1px -1px 7px 1px #17ccd3;
 }
 .project-heading,
-.about-heading {
+.about-heading, 
+.testimonial-heading {
   color: transparent;
   font-weight: 900 !important;
   -webkit-text-stroke: 2px var(--platinum);
