@@ -39,7 +39,7 @@ section {
   --white: #ffff;
 }
 .nav-btn {
-  border: 1px solid ;
+  border: 1px solid;
   background-color: transparent;
   color: var(--platinum);
 }
@@ -47,8 +47,8 @@ section {
   animation: borderAnimation 2s infinite linear both;
   color: var(--platinum);
 }
-.navbar-bg , 
-.offcanvas-bg{
+.navbar-bg,
+.offcanvas-bg {
   backdrop-filter: blur(8px);
 }
 .intro-name,
@@ -188,7 +188,7 @@ section {
   background: transparent !important;
   color: var(--white) !important;
 }
-.testimonial-area .rating-starts{
+.testimonial-area .rating-starts {
   color: var(--darkturquoise);
 }
 
@@ -225,7 +225,7 @@ section {
   left: 90%;
   animation-duration: 5.5s;
 }
-.user-image{
+.user-image {
   width: 60px;
   height: 60px;
   border-radius: 100%;
@@ -245,43 +245,44 @@ section {
 .carousel-navigation button:hover {
   color: var(--darkturquoise);
 }
-.progress-card h5{
- color: var(--platinum);
- letter-spacing: 2px;
- font-weight: bold;
-}
-.progress-circle{
-  width: 8em;
-  height: 8em;
-  border: var(--darkturquoise) 8px solid;
+.outer {
+  width: 160px;
+  height: 160px;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgb(23, 205, 211, 0.15),
+    -6px -6px 10px -1px rgb(23, 205, 211, 0.7);
   border-radius: 100%;
-  overflow: hidden;
-  margin: 1em;
 }
-.progress{
-  width: 8em;
-  height: 8em;
-  position: absolute;
-  bottom: -100%;
-  background: linear-gradient(0deg , #17ccd3 0% , #129fa5 100%);
-  transition: bottom 2.5s;
+.inner {
+  width: 120px;
+  height: 120px;
+  box-shadow: inset 4px 4px 6px -1px rgb(23, 205, 211, 0.15),
+    inset -4px -4px 6px -1px rgb(23, 205, 211, 0.7);
+  border-radius: 50%;
 }
-.progress-content{
-  background: linear-gradient(0deg , #080808 0%, #111111 100% );
-  width: 7.6em;
-  height: 7.6em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% , -50%);
-  border-radius: 100%;
+#number {
   color: var(--platinum);
-  z-index: 1;
-}
-.progress-content h5{
-  font-size: 2em;
   font-weight: 500;
+  font-size: 22px;
 }
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: progressAnimation 2s 1 ease-in-out both;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 6%;
+}
+.skill-heading{
+  color: var(--darkturquoise);
+}
+
+
 /* ------------- ANIMATIONS --------------- */
 
 @keyframes textFill {
@@ -302,8 +303,7 @@ section {
     border-bottom-color: var(--skobeloff);
     border-left-color: var(--darkturquoise);
     border-right-color: var(--skobeloff);
-    box-shadow:  1px -1px 3px -0.1px #17ccd3;
-
+    box-shadow: 1px -1px 3px -0.1px #17ccd3;
   }
   25% {
     border-bottom-color: var(--skobeloff);
@@ -343,5 +343,10 @@ section {
   100% {
     transform: translateY(100vh);
     opacity: 0;
+  }
+}
+@keyframes progressAnimation {
+  100%{
+    stroke-dashoffset: 115.7;
   }
 }
