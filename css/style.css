@@ -137,9 +137,7 @@ section {
   animation: borderAnimation 2s infinite linear both;
   box-shadow: 1px -1px 7px 1px #17ccd3;
 }
-.project-heading,
-.about-heading, 
-.testimonial-heading {
+.section-heading {
   color: transparent;
   font-weight: 900 !important;
   -webkit-text-stroke: 2px var(--platinum);
@@ -246,6 +244,43 @@ section {
 }
 .carousel-navigation button:hover {
   color: var(--darkturquoise);
+}
+.progress-card h5{
+ color: var(--platinum);
+ letter-spacing: 2px;
+ font-weight: bold;
+}
+.progress-circle{
+  width: 8em;
+  height: 8em;
+  border: var(--darkturquoise) 8px solid;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 1em;
+}
+.progress{
+  width: 8em;
+  height: 8em;
+  position: absolute;
+  bottom: -100%;
+  background: linear-gradient(0deg , #17ccd3 0% , #129fa5 100%);
+  transition: bottom 2.5s;
+}
+.progress-content{
+  background: linear-gradient(0deg , #080808 0%, #111111 100% );
+  width: 7.6em;
+  height: 7.6em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  border-radius: 100%;
+  color: var(--platinum);
+  z-index: 1;
+}
+.progress-content h5{
+  font-size: 2em;
+  font-weight: 500;
 }
 /* ------------- ANIMATIONS --------------- */
 
