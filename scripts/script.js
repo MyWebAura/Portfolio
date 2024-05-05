@@ -12,16 +12,11 @@ function openVideo(file) {
 }
 document.addEventListener("scroll", () => {
   const navBar = document.querySelector(".navbar");
-  const offNavBar = document.querySelector(".off-navbar");
   if (window.scrollY > 0) {
     navBar.classList.add("navbar-bg");
-    offNavBar.classList.add("offcanvas-bg");
-    offNavBar.classList.add("offcanvas-bg");
   } else {
     navBar.classList.remove("navbar-bg");
-    offNavBar.classList.remove("offcanvas-bg");
   }
 });
-// Get the circle element
-// Function to update the stroke-dashoffset based on the HTML content of #number// Function to update the stroke-dashoffset based on the HTML content of #number
+
 
