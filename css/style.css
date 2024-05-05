@@ -252,6 +252,7 @@ section {
   box-shadow: 6px 6px 10px -1px rgb(23, 205, 211, 0.15),
     -6px -6px 10px -1px rgb(23, 205, 211, 0.7);
   border-radius: 100%;
+  margin-inline: auto;
 }
 .inner {
   width: 120px;
@@ -265,18 +266,30 @@ section {
   font-weight: 500;
   font-size: 22px;
 }
-circle {
+.col1 circle , 
+.col3 circle , 
+.col4 circle {
   fill: none;
   stroke: url(#GradientColor);
   stroke-width: 20px;
   stroke-dasharray: 450;
+}
+.col1 circle{
   stroke-dashoffset: 450;
-  animation: progressAnimation 2s 1 ease-in-out both;
+  animation: circle1Animation 2s 1 ease-in-out both;
+}
+.col3 circle{
+  stroke-dashoffset: 450;
+  animation: circle3Animation 2s 1 ease-in-out both;
+}
+.col4 circle{
+  stroke-dashoffset: 450;
+  animation: circle4Animation 2s 1 ease-in-out both;
 }
 svg {
   position: absolute;
   top: 0;
-  left: 6%;
+  left: 0%;
 }
 .skill-heading{
   color: var(--darkturquoise);
@@ -345,8 +358,18 @@ svg {
     opacity: 0;
   }
 }
-@keyframes progressAnimation {
+@keyframes circle1Animation {
   100%{
-    stroke-dashoffset: 115.7;
+    stroke-dashoffset: 34;
+  }
+}
+@keyframes circle3Animation {
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes circle4Animation {
+  100%{
+    stroke-dashoffset: 135;
   }
 }

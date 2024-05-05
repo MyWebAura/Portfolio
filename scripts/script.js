@@ -22,3 +22,6 @@ document.addEventListener("scroll", () => {
     offNavBar.classList.remove("offcanvas-bg");
   }
 });
+// Get the circle element
+// Function to update the stroke-dashoffset based on the HTML content of #number// Function to update the stroke-dashoffset based on the HTML content of #number
+
