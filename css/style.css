@@ -321,14 +321,14 @@ svg {
 
 .submit-btn {
   background-color: transparent;
-  width: 13em;
-  height: 3.3em;
+  width: 10em;
+  height: 3em;
   border: 2px solid  var(--darkturquoise);
   border-radius: 25px;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--darkturquoise);
-  padding: 2px;
+  padding: 1.5px;
   display: flex;
   justify-content: center;
   align-items: center;
