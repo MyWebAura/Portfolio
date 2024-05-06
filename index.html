@@ -79,27 +79,27 @@
                 <div class="offcanvas-body  ">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item ">
-                            <a class="nav-link active text-light ms-lg-5 nav-link-active" aria-current="page"
-                                href="#home">Home</a>
+                            <a class="nav-link active  text-light ms-lg-5 " aria-current="page"
+                                href="#home" onclick="changeActive(this);">Home</a>
+                        </li>
+                        <li class="nav-item " >
+                            <a class="nav-link  text-light ms-lg-5" aria-current="page" href="#about" onclick="changeActive(this);">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-light ms-lg-5" aria-current="page"
+                                href="#project" onclick="changeActive(this);">Projects</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active text-light ms-lg-5" aria-current="page" href="#about">About</a>
+                            <a class="nav-link  text-light ms-lg-5" aria-current="page" href="#skill" onclick="changeActive(this);">Skills</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active text-light ms-lg-5" aria-current="page"
-                                href="#project">Projects</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active text-light ms-lg-5" aria-current="page" href="#skill">Skills</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active text-light ms-lg-5" aria-current="page"
-                                href="#testimonial">Testimonials</a>
+                            <a class="nav-link  text-light ms-lg-5" aria-current="page"
+                                href="#testimonial" onclick="changeActive(this);">Testimonials</a>
                         </li>
                     </ul>
                     <div class="container-fluid  m-0 p-0 ">
                         <a href="#contact">
-                            <button class="form-control nav-btn mt-3 px-4 py-3 rounded-2 ">Contact Me </button>
+                            <button class="form-control nav-btn mt-3 px-4 py-3 rounded-2 " onclick="removeActive(this);">Contact Me </button>
                         </a>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                             </a>
                         </button>
                     </div>
-                    <button class="hire-me-btn px-4 py-2 mt-4 rounded-4 ">Hire Me</button>
+                   <a href="#contact"> <button class="hire-me-btn px-4 py-2 mt-4 rounded-4 ">Hire Me</button> </a>
                 </div>
                 <div class="col" data-aos="fade-left" data-aos-duration="2700">
                     <img src="Images/main-image.jpg" class="img-fluid  main-img rounded-circle " alt="">
@@ -168,7 +168,7 @@
                                 skills at Riphah International University in Faisalabad. My passion lies in devising
                                 inventive solutions, compelling me to constantly refine my craft and stay ahead of
                                 emerging industry trends.</p>
-                            <button class="contact-me-btn px-4 py-2 mt-4 rounded-4 ">Contact Me</button>
+                            <a href="#contact"><button class="contact-me-btn px-4 py-2 mt-4 rounded-4 ">Contact Me</button></a>
                         </div>
                     </div>
                 </div>
