@@ -234,21 +234,6 @@ section {
   height: 60px;
   border-radius: 100%;
 }
-.carousel-navigation {
-  position: absolute;
-  bottom: -30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carousel-navigation button {
-  color: var(--platinum);
-  font-size: 1.4rem;
-  transition: color 0.45s ease-in-out;
-}
-.carousel-navigation button:hover {
-  color: var(--darkturquoise);
-}
 .outer {
   width: 160px;
   height: 160px;
