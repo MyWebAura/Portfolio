@@ -296,115 +296,6 @@ svg {
 }
 
 
-.contact-sec-main-container input,
-.contact-sec-main-container textarea {
-  max-width: 500px;
-  margin-inline: auto;
-  color: var(--darkturquoise) !important;
-  border: none;
-  border-bottom: 2px solid var(--bluegreen);
-  transition: all ease-in-out 0.45s;
-}
-.contact-sec-main-container input::placeholder,
-.contact-sec-main-container textarea::placeholder {
-  color: rgb(160, 159, 159);
-}
-.contact-sec-main-container input:focus,
-.contact-sec-main-container textarea:focus {
-  outline: none;
-  border-bottom: 2px solid var(--darkturquoise);
-  box-shadow:  4px 4px 6px -1px var(--bluegreen);
-} 
-.submit-btn-container{
-  max-width: 500px;
-}
-
-.submit-btn {
-  background-color: transparent;
-  width: 13em;
-  height: 3.3em;
-  border: 2px solid  var(--darkturquoise);
-  border-radius: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--darkturquoise);
-  padding: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.submit-btn .txt {
-  transition: .4s ease-in-out;
-  position: absolute;
-}
-
-.submit-btn .txt2 {
-  transform: translateY(1em) scale(0);
-  color: var(--platinum);
-  position: absolute;
-}
-
-.submit-btn .loader-container {
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
-  border-radius: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.submit-btn .loader-container .loader {
-  height: 100%;
-  width: 100%;
-  background-color: var(--darkturquoise);
-  border-radius: inherit;
-  transform: translateX(-13em);
-}
-
-.submit-btn:focus {
-  transition: .4s ease-in-out .4s;
-  animation: scaling 1.5s ease-in-out 0s 1 both;
-}
-
-.submit-btn:focus .txt {
-  position: absolute;
-  transform: translateY(-5em);
-  transition: .4s ease-in-out;
-}
-
-.submit-btn:focus .txt2 {
-  transform: translateY(0) scale(1);
-  transition: .3s ease-in-out 1.7s;
-}
-
-.submit-btn:focus .loader {
-  display: block;
-  transform: translate(0);
-  transition: .8s cubic-bezier(0,.4,1,.28) .4s;
-  animation: loading;
-}
-
-@keyframes scaling {
-  20% {
-    height: 1.5em;
-  }
-
-  80% {
-    height: 1.5em;
-  }
-
-  100% {
-    height: 3.3em;
-  }
-}
-
 /* ------------- ANIMATIONS --------------- */
 
 @keyframes textFill {
@@ -468,17 +359,17 @@ svg {
   }
 }
 @keyframes circle1Animation {
-  100% {
+  100%{
     stroke-dashoffset: 34;
   }
 }
 @keyframes circle3Animation {
-  100% {
+  100%{
     stroke-dashoffset: 0;
   }
 }
 @keyframes circle4Animation {
-  100% {
+  100%{
     stroke-dashoffset: 135;
   }
 }
