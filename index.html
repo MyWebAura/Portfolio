@@ -78,21 +78,21 @@
                 </div>
                 <div class="offcanvas-body  ">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item ">
+                        <li class="nav-item  mb-2">
                             <a class="nav-link active  text-light ms-lg-5 " aria-current="page"
                                 href="#home" onclick="changeActive(this);">Home</a>
                         </li>
-                        <li class="nav-item " >
+                        <li class="nav-item  mb-2" >
                             <a class="nav-link  text-light ms-lg-5" aria-current="page" href="#about" onclick="changeActive(this);">About</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mb-2">
                             <a class="nav-link  text-light ms-lg-5" aria-current="page"
                                 href="#project" onclick="changeActive(this);">Projects</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item  mb-2">
                             <a class="nav-link  text-light ms-lg-5" aria-current="page" href="#skill" onclick="changeActive(this);">Skills</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item">
                             <a class="nav-link  text-light ms-lg-5" aria-current="page"
                                 href="#testimonial" onclick="changeActive(this);">Testimonials</a>
                         </li>
@@ -423,6 +423,16 @@
         </div>
     </section>
     <hr class="hr">
+    <div class="container-fluid arrow-for-scroll d-none  ">
+        <div class="row justify-content-end me-3  fixed-bottom bottom-0 float-end">
+          <div class="col-md-6 text-end ">
+            <a href="#top">
+              <button
+                class="btn btn-arrow  mb-4 rounded-3 px-lg-3 px-sm-2 py-lg-2 py-sm-1 text-light fs-6 "><i class="fa-solid fa-arrow-up"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
     <section id="footer" class="p-0 pt-2 ">
         <div class="container-lg text-center ">
             <div class="container">
@@ -446,8 +456,11 @@
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                 </button>
+            </div>
           <p class="footer-text mt-3 pb-0 ">&copy Abdullah Haq | All Rights Reserved</p>
-    </section>
+    
+            </div>
+        </section>
     <script src="plugins/jquery-3.7.1.min.js"></script>
     <script src="plugins/owl.carousel.min.js"></script>
     <script src="plugins/bootstrap.bundle.min.js"></script>

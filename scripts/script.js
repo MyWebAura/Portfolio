@@ -30,3 +30,11 @@ function removeActive(item){
     navbarItem.classList.remove("active");
   });
 }
+document.addEventListener("scroll", () => {
+  const scrollArrow = document.querySelector(".arrow-for-scroll");
+  if (window.scrollY > 0) {
+    scrollArrow.classList.remove("d-none");
+  } else {
+    scrollArrow.classList.add("d-none");
+  }
+});

@@ -399,7 +399,14 @@ svg {
     height: 3.3em;
   }
 }
-
+.btn-arrow{
+  color: var(--platinum);
+  background-color: var(--darkturquoise);
+  box-shadow: 2px 10px 10px 2px #129fa5;
+}
+.btn-arrow:hover{
+ border: 1px solid var(--darkturquoise);
+}
 /* ------------- ANIMATIONS --------------- */
 
 @keyframes textFill {
