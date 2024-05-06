@@ -38,6 +38,9 @@ section {
   --darkturquoise: #17ccd3;
   --white: #ffff;
 }
+.active{
+  color: var(--darkturquoise) !important;
+}
 .nav-btn {
   border: 1px solid;
   background-color: transparent;
@@ -144,18 +147,19 @@ section {
   animation: textFill 4s infinite ease-in-out both;
 }
 
-.view-btn p {
+.view-btn p , .nav-link {
   color: var(--darkturquoise);
   display: inline;
   background-image: linear-gradient(to right, #17ccd3 0%, #17ccd3 100%);
   background-size: 0px 2px;
-  background-position: 0px 95%;
+  background-position: 0px 99%;
   transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
   padding: 0.2% 0px;
   background-repeat: no-repeat;
   border: none;
 }
-.view-btn:hover p {
+.view-btn:hover p ,
+.nav-link:hover {
   background-size: 100% 2px;
 }
 .project-video-container {

@@ -32,27 +32,27 @@
                 <div class="align-items-center container-fluid d-flex justify-content-center">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item ">
-                            <a class="nav-link active text-light ms-lg-5 nav-link-active" aria-current="page"
-                                href="#home">Home</a>
+                            <a class="nav-link active  text-light ms-lg-5 " aria-current="page"
+                                href="#home" onclick="changeActive(this);">Home</a>
+                        </li>
+                        <li class="nav-item " >
+                            <a class="nav-link  text-light ms-lg-5" aria-current="page" href="#about" onclick="changeActive(this);">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-light ms-lg-5" aria-current="page"
+                                href="#project" onclick="changeActive(this);">Projects</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active text-light ms-lg-5" aria-current="page" href="#about">About</a>
+                            <a class="nav-link  text-light ms-lg-5" aria-current="page" href="#skill" onclick="changeActive(this);">Skills</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active text-light ms-lg-5" aria-current="page"
-                                href="#project">Projects</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active text-light ms-lg-5" aria-current="page" href="#skill">Skills</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active text-light ms-lg-5" aria-current="page"
-                                href="#testimonial">Testimonials</a>
+                            <a class="nav-link  text-light ms-lg-5" aria-current="page"
+                                href="#testimonial" onclick="changeActive(this);">Testimonials</a>
                         </li>
                     </ul>
                 </div>
-                <div class="container-fluid d-flex justify-content-end w-25 align-items-center  ">
-                    <a href="#contact"><button class="btn px-4 py-3 rounded-2  fw-bold  nav-btn">Contact Me
+                <div class="container-fluid d-flex justify-content-end w-25 align-items-center ">
+                    <a href="#contact"><button class="btn px-4 py-3 rounded-2  fw-bold  nav-btn" onclick="removeActive(this);">Contact Me
                             <span class=" "><img src="Images/arrow.png" class="img-fluid  mb-1"
                                     alt=""></span></button></a>
                 </div>
@@ -415,17 +415,19 @@
                         <img src="Images/Picsart_24-05-06_23-46-32-372.png" class="img-fluid " alt="">
                     </div>
                     <div class="col" data-aos="fade-down" data-aos-duration="2000">
-                        <input type="text" placeholder="Name" class="form-control bg-transparent mb-2 ">
-                        <input type="email" placeholder="Email" class="form-control  bg-transparent mb-2 ">
-                        <textarea name="" id="" cols="30" rows="8" placeholder="Messsage"  class="form-control bg-transparent  "></textarea>
+                        <form action="">
+                            <input type="text" placeholder="Name" class="form-control bg-transparent mb-2 " required>
+                            <input type="email" placeholder="Email" class="form-control  bg-transparent mb-2 " required>
+                            <textarea name="" id="" cols="30" rows="8" placeholder="Messsage"  class="form-control bg-transparent  " required></textarea>
+                        </form>
                         <div class="container-fluid d-flex justify-content-end submit-btn-container mt-3 ">
-                            <button class="submit-btn">
+                            <button class="submit-btn" type="submit">
                                 <span class="txt">submit</span>
                                 <span class="txt2">sent!</span>
                                 <span class="loader-container">
-                                  <span class="loader"></span>
+                                    <span class="loader"></span>
                                 </span>
-                              </button>
+                            </button>
                         </div>
                     </div>
                 </div>

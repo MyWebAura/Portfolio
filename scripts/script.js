@@ -19,12 +19,14 @@ document.addEventListener("scroll", () => {
   }
 });
 function changeActive(item) {
-  var navbarItems = document.querySelectorAll('.nav-item');
-  navbarItems.forEach(function(navbarItem) {
-      navbarItem.classList.remove('active');
-  });
+  removeActive(item);
 
-  item.classList.add('active');
+  item.classList.add("active");
 }
 
-
+function removeActive(item){
+  var navbarItems = document.querySelectorAll(".nav-link");
+  navbarItems.forEach(function (navbarItem) {
+    navbarItem.classList.remove("active");
+  });
+}
