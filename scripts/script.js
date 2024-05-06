@@ -18,5 +18,13 @@ document.addEventListener("scroll", () => {
     navBar.classList.remove("navbar-bg");
   }
 });
+function changeActive(item) {
+  var navbarItems = document.querySelectorAll('.nav-item');
+  navbarItems.forEach(function(navbarItem) {
+      navbarItem.classList.remove('active');
+  });
+
+  item.classList.add('active');
+}
 
 

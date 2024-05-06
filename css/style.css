@@ -390,6 +390,12 @@ svg {
   transition: .8s cubic-bezier(0,.4,1,.28) .4s;
   animation: loading;
 }
+.hr{
+  color: var(--darkturquoise);
+}
+.footer-text{
+  color: var(--platinum);
+}
 
 @keyframes scaling {
   20% {
