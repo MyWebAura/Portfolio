@@ -28,8 +28,9 @@ function validateForm() {
         messageInput.focus();
         return;
     }
-    // alert("Thank you for your submission!");
-    nameInput.value = "";
-    emailInput.value = "";
-    messageInput.value = "";
+    setTimeout(() => {
+        nameInput.value = "";
+        emailInput.value = "";
+        messageInput.value = "";
+    }, 1700);
 }
