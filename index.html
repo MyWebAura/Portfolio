@@ -404,9 +404,12 @@
                     </div>
                     <div class="col" data-aos="fade-down" data-aos-duration="2000">
                         <form action="">
-                            <input type="text" placeholder="Name" class="form-control bg-transparent mb-2 " pattern="[A-Za-z]+" required  oninput="validateInput('nameInput', 'name-input-error')">
+                            <input type="text" placeholder="Name" id="nameInput" class="form-control bg-transparent mb-2 " pattern="[A-Za-z]+" required  oninput="validateInput('nameInput', 'name-input-error')">
                             <p class="text-light" id="name-input-error"></p>
-                            <input type="email" placeholder="Email" class="form-control  bg-transparent mb-2 " required>
+                            <input type="email" placeholder="Email" id="emailInput" class="form-control  bg-transparent mb-2 "  pattern="^[^\s@]+@[^\s@]+\.[a-z]{2,3}$" required
+                            oninput="validateInput('emailInput', 'email-input-error')">
+                        <p class="text-light" id="email-input-error"></p>
+
                             <textarea name="" id="" cols="30" rows="8" placeholder="Messsage"  class="form-control bg-transparent  " required></textarea>
                         </form>
                         <div class="container-fluid d-flex justify-content-end submit-btn-container mt-3 ">
