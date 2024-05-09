@@ -404,7 +404,8 @@
                     </div>
                     <div class="col" data-aos="fade-down" data-aos-duration="2000">
                         <form action="">
-                            <input type="text" placeholder="Name" class="form-control bg-transparent mb-2 " required>
+                            <input type="text" placeholder="Name" class="form-control bg-transparent mb-2 " pattern="[A-Za-z]+" required  oninput="validateInput('nameInput', 'name-input-error')">
+                            <p class="text-light" id="name-input-error"></p>
                             <input type="email" placeholder="Email" class="form-control  bg-transparent mb-2 " required>
                             <textarea name="" id="" cols="30" rows="8" placeholder="Messsage"  class="form-control bg-transparent  " required></textarea>
                         </form>
