@@ -308,77 +308,7 @@ svg {
   max-width: 500px;
 }
 
-.submit-btn {
-  background-color: transparent;
-  width: 10em;
-  height: 3em;
-  border: 2px solid  var(--darkturquoise);
-  border-radius: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--darkturquoise);
-  padding: 1.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
 
-.submit-btn .txt {
-  transition: .4s ease-in-out;
-  position: absolute;
-}
-
-.submit-btn .txt2 {
-  transform: translateY(1em) scale(0);
-  color: var(--platinum);
-  position: absolute;
-}
-
-.submit-btn .loader-container {
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
-  border-radius: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.submit-btn .loader-container .loader {
-  height: 100%;
-  width: 100%;
-  background-color: var(--darkturquoise);
-  border-radius: inherit;
-  transform: translateX(-13em);
-}
-
-.submit-btn:focus {
-  transition: .4s ease-in-out .4s;
-  animation: scaling 1.5s ease-in-out 0s 1 both;
-}
-
-.submit-btn:focus .txt {
-  position: absolute;
-  transform: translateY(-5em);
-  transition: .4s ease-in-out;
-}
-
-.submit-btn:focus .txt2 {
-  transform: translateY(0) scale(1);
-  transition: .3s ease-in-out 1.7s;
-}
-
-.submit-btn:focus .loader {
-  display: block;
-  transform: translate(0);
-  transition: .8s cubic-bezier(0,.4,1,.28) .4s;
-  animation: loading;
-}
 .hr{
   color: var(--darkturquoise);
 }
