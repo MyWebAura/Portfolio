@@ -307,8 +307,11 @@ svg {
 .submit-btn-container{
   max-width: 500px;
 }
-
-
+.sendBtn{
+  color: var(--platinum);
+  border: 1px solid var(--darkturquoise);
+  
+}
 .hr{
   color: var(--darkturquoise);
 }
