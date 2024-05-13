@@ -24,7 +24,7 @@ function changeActive(item) {
   item.classList.add("active");
 }
 
-function removeActive(item){
+function removeActive(item) {
   var navbarItems = document.querySelectorAll(".nav-link");
   navbarItems.forEach(function (navbarItem) {
     navbarItem.classList.remove("active");
@@ -38,3 +38,4 @@ document.addEventListener("scroll", () => {
     scrollArrow.classList.add("d-none");
   }
 });
+
