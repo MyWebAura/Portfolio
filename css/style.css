@@ -310,7 +310,13 @@ svg {
 .sendBtn{
   color: var(--platinum);
   border: 1px solid var(--darkturquoise);
-  
+  background: transparent;
+  transition: all ease-in-out 0.67s;
+}
+.sendBtn:hover{
+  border-color: var(--platinum) ;
+  background: var(--darkturquoise);
+  box-shadow: 4px 4px 6px -1px var(--darkturquoise);
 }
 .hr{
   color: var(--darkturquoise);
