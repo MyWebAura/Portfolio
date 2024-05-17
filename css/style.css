@@ -346,6 +346,7 @@ svg {
 .btn-arrow:hover{
  border: 1px solid var(--darkturquoise);
 }
+
 /* ------------- ANIMATIONS --------------- */
 
 @keyframes textFill {
