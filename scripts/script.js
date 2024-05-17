@@ -38,4 +38,3 @@ document.addEventListener("scroll", () => {
     scrollArrow.classList.add("d-none");
   }
 });
-
