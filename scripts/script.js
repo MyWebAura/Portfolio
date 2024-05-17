@@ -43,5 +43,20 @@ document.addEventListener("DOMContentLoaded", function () {
   const textToType = "Imagine";
   let index = 0;
 
- 
+  function type() {
+    if (index < textToType.length) {
+      textElement.textContent += textToType.charAt(index);
+      index++;
+      setTimeout(type, 70);
+    } else {
+      setTimeout(function () {
+        const preloader = document.querySelector(".starting-preloader");
+        preloader.style.opacity = 0;
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 1000);
+      }, 400);
+    }
+  }
+  type();
 });
