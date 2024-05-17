@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (index < textToType.length) {
       textElement.textContent += textToType.charAt(index);
       index++;
-      setTimeout(type, 70);
+        setTimeout(type, 70);
     } else {
       setTimeout(function () {
         const preloader = document.querySelector(".starting-preloader");
@@ -58,5 +58,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 400);
     }
   }
-  type();
+  setTimeout(type, 900);
 });
