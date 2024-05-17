@@ -40,7 +40,7 @@ document.addEventListener("scroll", () => {
 });
 document.addEventListener("DOMContentLoaded", function () {
   const textElement = document.querySelector(".typed-text");
-  const textToType = "Imagine";
+  const textToType = "MyWebAura";
   let index = 0;
 
   function type() {
