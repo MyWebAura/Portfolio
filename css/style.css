@@ -361,6 +361,15 @@ svg {
   opacity: 1;
   transition: opacity 1s ease-in-out;
 }
+.linkedin-modal .modal-title{
+color: var(--darkturquoise);
+}
+.linkedin-modal .modal-body{
+color: var(--platinum);
+}
+.linkedin-modal .btn-close{
+background-color: var(--darkturquoise);
+}
 /* ------------- ANIMATIONS --------------- */
 
 @keyframes textFill {
