@@ -38,3 +38,10 @@ document.addEventListener("scroll", () => {
     scrollArrow.classList.add("d-none");
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const textElement = document.querySelector(".typed-text");
+  const textToType = "Imagine";
+  let index = 0;
+
+ 
+});
